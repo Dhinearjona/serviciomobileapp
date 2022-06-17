@@ -182,3 +182,58 @@
   font-size: 20px;
   font-weight: bolder;
 }
+
+@media (max-width: 320px) {
+  #navbar img {
+    margin-left: 1rem;
+  }
+  #btn button {
+    display: none;
+  }
+  .cover img {
+    margin-top: -16rem;
+  }
+  .services {
+    margin-top: -4rem;
+  }
+  .services h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -1rem;
+  }
+  .services p {
+    width: 19rem;
+    text-align: center;
+    margin-left: -.5rem;
+    font-size: 10px;
+  }
+  .footer {
+    margin-left: -5rem;
+    margin-top: 2rem;
+  }
+  .footer img {
+    margin-left: 7.5rem;
+    width: 15rem;
+  }
+  .footer p {
+    margin-top: -.5rem;
+    margin-left: 5rem;
+  }
+  .icons {
+    margin-left: 2.2rem;
+  }
+  .icons i {
+    font-size: 12px;
+    margin-left: 1rem;
+    line-height: 2.5rem;
+    width: 40px;
+    height: 40px;
+  }
+  .icons img {
+    width: 15rem;
+    margin-left: 0;
+  }
+  .foot p {
+    font-size: 14px;
+  }
+}
