@@ -208,7 +208,7 @@
     margin-top: -1rem;
   }
   .services p {
-    width: 19.5rem;
+    width: 20rem;
     margin: 0 auto;
     text-align: center;
     margin-left: -0.5rem;
@@ -263,13 +263,19 @@
   }
   #navbar ul {
     margin-top: -6rem;
+    margin-left: 8rem;
   }
   #navbar li {
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: .5rem;
+  }
+  #btn button {
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
   }
   .cover img {
     width: 64.5rem;
-    margin-top: 1.9rem;
+    margin-top: 1.5rem;
   }
   .services {
     width: 64.5rem;
@@ -343,6 +349,10 @@
   #navbar li {
     font-size: 30px;
   }
+  .container .row {
+    width: 55rem;
+    margin-left: 7rem;
+  }
   #btn button {
     padding: 1rem 2rem;
     margin-right: 5rem;
@@ -362,5 +372,122 @@
   .services p {
     margin-left: 10rem;
     font-size: 20px;
+  }
+  .footer {
+    margin-top: 1.5rem;
+  }
+  .footer img {
+    width: 20rem;
+    margin-left: 10rem;
+  }
+  .footer p {
+    width: 20rem;
+    margin-left: 30rem;
+    font-size: 24px;
+  }
+  .icons {
+    width: 20rem;
+    margin-left: 37rem;
+  }
+  .icons p {
+    width: 20rem;
+    margin-left: -1rem;
+    font-size: 24px;
+  }
+  .foot p {
+    width: 72rem;
+    font-size: 24px;
+  }
+}
+
+@media (min-device-width: 426px) and (max-device-width: 768px) {
+  #navbar {
+    width: 72rem;
+  }
+  #navbar a {
+    font-size: 20px;
+  }
+  .cover img {
+    width: 72rem;
+    margin-top: .3rem;
+  }
+  .services {
+    width: 72rem;
+  }
+  .services h1 {
+    font-size: 5rem;
+  }
+  .services p {
+    margin-left: 8rem;
+    font-size: 23px;
+    width: 55rem;
+  }
+  .container {
+    margin-left: 20.5rem !important;
+  }
+  .container .row {
+    margin-left: -15rem;
+  }
+  .footer {
+    margin-top: 2rem;
+  }
+  .footer img {
+    margin-left: 10rem;
+  }
+  .footer p {
+    width: 20rem;
+    margin-left: 30rem;
+    font-size: 24px;
+  }
+  .icons {
+    width: 20rem;
+    margin-left: 35rem;
+  }
+  .icons i {
+    margin-left: 1rem;
+  }
+  .icons p {
+    margin-left: 1rem;
+    font-size: 24px;
+  }
+  .icons img {
+    width: 15rem;
+    margin-left: 2.5rem;
+  }
+  .foot p {
+    width: 72rem;
+  }
+}
+
+@media (min-device-width: 769px) and (max-device-width: 1024px) {
+  #navbar {
+    width: 72rem;
+  }
+  .cover img {
+    width: 72rem;
+  }
+  .services {
+    width: 72rem;
+  }
+  .services p {
+    margin-left: 11rem;
+    font-size: 20px;
+  }
+  .container .row {
+    width: 59rem;
+    margin-left: .5rem;
+  }
+  .footer img {
+    margin-left: 10rem;
+  }
+  .footer p {
+    margin-left: 18rem;
+    font-size: 24px;
+  }
+  .icons {
+    margin-left: 35.5rem;
+  }
+  .foot p {
+    width: 72rem;
   }
 }

@@ -189,7 +189,7 @@
     }
 }
 
-// Small Android //
+// Small Device //
 @media (max-device-width: 320px) {
     #navbar {
         width: 21.3rem;
@@ -226,7 +226,7 @@
         }
         
         p {
-            width: 19.5rem;
+            width: 20rem;
             margin: 0 auto;
             text-align: center;
             margin-left: -0.5rem;
@@ -282,7 +282,7 @@
     }
 }
 
-// Medium Android //
+// Medium Device //
 @media (min-device-width: 321px) and (max-device-width: 375px) {
     #navbar {
         width: 64.5rem;
@@ -294,10 +294,20 @@
 
         ul {
             margin-top: -6rem;
+            margin-left: 8rem;
         }
 
         li {
-            font-size: 20px;
+            font-size: 30px;
+            margin-top: .5rem;
+        }
+    }
+
+    #btn {
+
+        button {
+            margin-right: 2rem;
+            padding: 0.5rem 1rem;
         }
     }
 
@@ -305,7 +315,7 @@
 
         img {
             width: 64.5rem;
-            margin-top: 1.9rem;
+            margin-top: 1.5rem;
         }
     }
 
@@ -387,7 +397,7 @@
     }
 }
 
-// Medium Android //
+// Large Device //
 @media (min-device-width: 376px) and (max-device-width: 425px) {
     #navbar {
         width: 72rem;
@@ -403,6 +413,14 @@
 
         li {
             font-size: 30px;
+        }
+    }
+
+    .container {
+
+        .row {
+            width: 55rem;
+            margin-left: 7rem;
         }
     }
 
@@ -434,6 +452,176 @@
         p {
             margin-left: 10rem;
             font-size: 20px;
+        }
+    }
+
+    .footer {
+        margin-top: 1.5rem;
+
+        img {
+            width: 20rem;
+            margin-left: 10rem;
+        }
+
+        p {
+            width: 20rem;
+            margin-left: 30rem;
+            font-size: 24px;
+        }
+    }
+
+    .icons {
+        width: 20rem;
+        margin-left: 37rem;
+
+        p {
+            width: 20rem;
+            margin-left: -1rem;
+            font-size: 24px;
+        }
+    }
+
+    .foot {
+        
+        p {
+            width: 72rem;
+            font-size: 24px;
+        }
+    }
+}
+
+// Tablet Device //
+@media (min-device-width: 426px) and (max-device-width: 768px) {
+    #navbar {
+        width: 72rem;
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .cover {
+
+        img {
+            width: 72rem;
+            margin-top: .3rem;
+        }
+    }
+
+    .services {
+        width: 72rem;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+            margin-left: 8rem;
+            font-size: 23px;
+            width: 55rem;
+        
+        }
+    }
+
+    .container {
+        margin-left: 20.5rem !important;
+
+        .row {
+            margin-left: -15rem;
+        }
+    }
+
+    .footer {
+        margin-top: 2rem;
+
+        img {
+            margin-left: 10rem;
+        }
+
+        p {
+            width: 20rem;
+            margin-left: 30rem;
+            font-size: 24px;
+        }
+    }
+
+    .icons {
+        width: 20rem;
+        margin-left: 35rem;
+
+        i {
+            margin-left: 1rem;
+        }
+
+        p {
+            margin-left: 1rem;
+            font-size: 24px;
+        }
+
+        img {
+            width: 15rem;
+            margin-left: 2.5rem;
+        }
+    }
+
+    .foot {
+
+        p {
+            width: 72rem;
+        }
+    }
+}
+
+// Laptop Device //
+@media (min-device-width: 769px) and (max-device-width: 1024px) {
+    #navbar {
+        width: 72rem;
+    }
+
+    .cover {
+
+        img {
+            width: 72rem;
+        }
+    }
+
+    .services {
+        width: 72rem;
+
+        p {
+            margin-left: 11rem;
+            font-size: 20px;
+        }
+    }
+
+    .container {
+
+        .row {
+            width: 59rem;
+            margin-left: .5rem;
+        }
+    }
+
+    .footer {
+
+        img {
+            margin-left: 10rem;
+        }
+
+        p {
+            margin-left: 18rem;
+            font-size: 24px;
+        }
+    }
+
+    .icons {
+        margin-left: 35.5rem;
+    }
+
+    .foot {
+
+        p {
+            width: 72rem;
         }
     }
 
