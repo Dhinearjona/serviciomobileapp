@@ -258,7 +258,7 @@
 
 @media (max-width: 768px) {
     .main {
-        width: 768px;
+        width: 100%;
 
         .nav-section {
             margin: 0 -5rem;
@@ -316,12 +316,13 @@
 
 @media (max-width: 424px) {
     .main {
+        width: 100%;
 
         ul {
             display: grid;
             line-height: 3rem;
             text-align: center;
-            margin-left: -20rem;
+            margin-left: 3rem;
         }
     }
 
@@ -352,6 +353,63 @@
             p {
                 margin-left: -5.5rem;
             }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .main {
+        width: 100%;
+
+        img {
+            margin-left: 9.5rem;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .services {
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 10px;
+            margin-left: 0rem;
+            width: 17rem;
+        }
+    }
+
+    .footer {
+        
+        img {
+            margin-left: -5.5rem;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .icons {
+            margin-left: -3.5rem;
+
+            p {
+                margin-left: -1.5rem;
+            }
+
+            img  {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .foot {
+            
+        p {
+            font-size: 15px;
         }
     }
 }
