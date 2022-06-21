@@ -14,60 +14,61 @@
     --lightgray: #5A5A5A;
 }
 
-#navbar {
+.main {
     background: var(--black);
+    height: 7rem;
+
+    .nav-section {
+        padding: 10px 150px;
+    }
 
     img {
-        width: 3rem;
-        margin: .5rem .5rem;
-        margin-left: 10rem;
+        width: 5rem;
     }
 
     ul {
-        margin-left: 15rem;
-        margin-top: -4.5rem;
+        display: flex;
+        margin-top: -4rem;
+        padding: 0 150px;
     }
 
     li {
-        float: left;
-        margin: 1rem 1rem;
-        margin-top: 1.2rem;
         list-style: none;
+        margin: 0 20px;
     }
 
     a {
         color: var(--white);
         text-decoration: none;
-        transition: .5s;
+        font-size: 20px;
+        transition: transform 200ms;
     }
 
     a:hover {
         color: var(--red);
     }
-}
 
-#btn {
+    .button1 {
+        margin-left: 20rem;
 
-    button {
-        float: right;
-        margin-right: 15rem;
-        padding: .5rem 1rem;
-        background: var(--yellow);
-        border: none;
-        color: var(--black);
-        transition: .5s;
-    }
+        button {
+            background: var(--yellow);
+            border: none;
+            color: var(--black);
+            padding: .5rem 1rem;
+            transition: transform 200ms;
+        }
 
-    button:hover {
-        background: var(--red);
-        color: var(--white);
+        button:hover {
+            background: var(--red);
+            color: var(--white);
+        }
     }
 }
 
 .cover {
 
     img {
-        margin-top: .8rem;
         width: 100%;
     }
 }
@@ -186,5 +187,171 @@
         padding: 1rem 1rem;
         font-size: 20px;
         font-weight: bolder;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        width: 1024px;
+
+        .nav-section {
+            padding: 1px 30px;
+        }
+
+        img {
+            margin: .5rem 5rem;
+        }
+
+        ul {
+            margin-top: -4.5rem;
+            margin-left: 5rem;
+        }
+
+        .button1 {
+            margin-left: 1rem;
+        }
+    }
+
+    .cover {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .services {
+
+        p {
+            margin-left: 5.5rem;
+            font-size: 20px;
+        }
+    }
+
+    .container {
+
+        .card-body {
+            padding: 0;
+        }
+    }
+
+    .footer {
+
+        img {
+            margin-left: 5rem;
+        }
+
+        .icons {
+            margin-left: 24.5rem;
+
+            p {
+                margin-left: -18.5rem;
+            }
+
+            img {
+                width: 15rem;
+                margin-top: -1.5rem;
+                margin-left: 0rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 768px;
+
+        .nav-section {
+            margin: 0 -5rem;
+        }
+
+        ul {
+            margin-left: 3rem;
+        }
+
+        a {
+            font-size: 16px;
+        }
+
+        .button1 {
+            margin-top: -.5rem;
+
+            button {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    .services {
+
+        p {
+            width: 40rem;
+            margin-left: 2.5rem;
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+
+        img {
+            margin-left: 0;
+        }
+
+        p {
+            margin-left: 12rem;
+        }
+
+        .icons {
+            margin-left: 19rem;
+
+            p {
+                margin-left: -7rem;
+            }
+
+            img {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .main {
+
+        ul {
+            display: grid;
+            line-height: 3rem;
+            text-align: center;
+            margin-left: -20rem;
+        }
+    }
+
+    .services {
+
+        p {
+            width: 23rem;
+            font-size: 14px;
+            margin-left: 0rem;
+        }
+    }
+
+    .footer {
+
+        img {
+            margin-left: -2rem;
+        }
+
+        p {
+            margin-top: 0rem;
+            margin-left: -5rem;
+            font-size: 30px;
+        }
+
+        .icons {
+            margin-left: 0;
+
+            p {
+                margin-left: -5.5rem;
+            }
+        }
     }
 }
