@@ -6,6 +6,10 @@
   font-family: 'Calibri',sans-serif;
 }
 
+html {
+  height: 1rem;
+}
+
 :root {
   --black: #121212;
   --white: #ffffff;
@@ -15,17 +19,249 @@
   --lightgray: #5A5A5A;
 }
 
-@media (max-width: 320px) {
+.main {
+  background: var(--black);
+  padding: 0 150px;
+}
+
+.main .navbar-section img {
+  width: 5rem;
+  margin: .5rem .5rem;
+}
+
+.main .navbar-section ul {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.main .navbar-section li {
+  margin: 0 2rem;
+  margin-top: -4.5rem;
+  list-style: none;
+}
+
+.main .navbar-section a {
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.cover .cover-section img {
+  width: 100%;
+  margin-top: -1rem;
+}
+
+.services {
+  background: var(--darkgray);
+  padding: 1rem 1rem;
+}
+
+.services .services-section {
+  text-align: center;
+}
+
+.services .services-section h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--red);
+  margin-bottom: 0;
+}
+
+.services .services-section p {
+  width: 55rem;
+  font-size: 1.5rem;
+  margin-left: 20rem;
+  margin-bottom: 0;
+  color: var(--white);
+}
+
+.services .services-product {
+  margin: 1rem 1rem;
+}
+
+.services .services-product .container {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.services .services-product .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .services-product .container .card {
+  flex: 1 1 9.5rem;
+  margin: 10px 20px;
+  align-self: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+.services .services-product .container img {
+  width: 125px;
+}
+
+.services .services-product .container h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.promotion {
+  background: var(--red);
+  padding: 1rem 1rem;
+  height: 45rem;
+}
+
+.promotion .promote-section {
+  margin: 0 250px;
+}
+
+.promotion .promote-section h1 {
+  width: 60rem;
+  font-family: 'Secular One',sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: var(--white);
+}
+
+.promotion .promote-section h5 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.promotion .promote-section .download-btn {
+  margin-top: 2rem;
+}
+
+.promotion .promote-section .download-btn a {
+  background: var(--white);
+  padding: 1rem 3rem;
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.promotion .promote-section .download-btn a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.promotion .promote-section .download-btn .apps img {
+  width: 25rem;
+  margin-left: 32rem;
+  margin-top: -16rem;
+}
+
+.promotion .promote-section .download-btn .apps .download img {
+  width: 20rem;
+  margin-left: 12rem;
+  margin-top: -33rem;
+}
+
+.footer {
+  background: var(--black);
+  height: fit-content;
+}
+
+.footer p {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    background: var(--black);
+  }
+  .main .navbar-section img {
+    width: 5rem;
+    margin: 1rem 5rem;
+  }
+  .main .navbar-section ul {
+    display: flex;
+    margin-left: 10rem;
+  }
+  .main .navbar-section li {
+    margin: 0 2rem;
+    margin-top: -5rem;
+  }
+  .main .navbar-section a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .main .navbar-section .active {
+    color: var(--red);
+  }
+  .cover-section img {
+    width: 100%;
+    margin-top: -1rem;
+  }
+  .services {
+    background: var(--lightgray);
+  }
+  .services .services-section {
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+  .services .services-section h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--red);
+  }
+  .services .services-section p {
+    color: var(--white);
+  }
+  .services .services-product {
+    padding: 1rem 1rem;
+  }
+  .services .services-product .container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .services .services-product .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .services .services-product .container .card {
+    flex: 1 1 9.5rem;
+    margin: 10px 20px;
+    align-self: normal;
+    text-align: center;
+    cursor: pointer;
+  }
+  .services .services-product .container img {
+    width: 125px;
+  }
+  .services .services-product .container h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 500px) {
   .main {
     background: var(--black);
-    padding-bottom: .1rem;
+    padding-bottom: 1rem;
   }
   .main img {
     width: 5rem;
-    margin: .5rem 7rem;
+    margin: .5rem 12.5rem;
   }
   .main ul {
     display: flex;
+    margin: 0 5.5rem;
   }
   .main li {
     padding: 0 20px;
@@ -44,20 +280,20 @@
   }
   .services-section {
     background: var(--darkgray);
-    height: 625rem;
+    padding-bottom: 2rem;
   }
   .services-section h1 {
     text-align: center;
     padding: 1rem;
-    font-size: 30px;
+    font-size: 4rem;
     font-weight: bolder;
     color: var(--red);
   }
   .services-section p {
-    width: 18rem;
+    width: 25rem;
     text-align: center;
     margin-top: -1rem;
-    margin-left: 1rem;
+    margin-left: 2.5rem;
     font-size: 12px;
     color: var(--white);
   }
@@ -91,28 +327,26 @@
     background: var(--red);
   }
   .promote-section h1 {
-    width: 16rem;
     font-family: 'Montserrat',sans-serif;
     text-align: center;
-    margin-left: 2rem;
-    padding-top: 2rem;
-    font-size: 2rem;
+    padding-top: 2.5rem;
+    font-size: 2.5rem;
     font-weight: 1000;
     color: var(--white);
   }
   .promote-section h5 {
     font-family: 'Montserrat',sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 1rem 2rem;
-    font-weight: 1000;
+    font-weight: 800;
     color: var(--white);
     text-align: center;
   }
   .promote-section a {
     background: var(--white);
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
-    margin: 0 6.3rem;
+    margin: 0 11rem;
     text-decoration: none;
     color: var(--black);
   }
@@ -121,12 +355,18 @@
     color: var(--white);
   }
   .promote-section img {
-    width: 15rem;
+    width: 25rem;
     border-radius: 30px;
-    margin: 0rem 2.5rem;
+    margin: 0rem 1rem;
   }
   .promote-section .download {
     margin-top: -1rem;
+  }
+  .promote-section .download img {
+    width: 10rem;
+    border-radius: 30px;
+    margin-top: -55rem;
+    margin-left: 18rem;
   }
   .footer {
     height: 0;
@@ -138,5 +378,68 @@
     color: var(--white);
     font-weight: 1000;
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  .main .navbar-section img {
+    margin-left: 7.5rem;
+  }
+  .main .navbar-section ul {
+    margin: 0 1rem;
+  }
+  .services-section h1 {
+    font-size: 3rem;
+  }
+  .services-section p {
+    width: 20rem;
+    margin-left: .5rem;
+  }
+  .promote-section h5 {
+    font-size: 1rem;
+  }
+  .promote-section a {
+    margin-left: 7rem;
+  }
+  .promote-section img {
+    width: 15rem;
+  }
+  .promote-section .download img {
+    margin-top: -33rem;
+    margin-left: 11rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 240px) {
+  .main .navbar-section img {
+    margin-left: 4rem;
+  }
+  .main .navbar-section ul {
+    margin-left: -2.8rem;
+  }
+  .services-section h1 {
+    font-size: 2rem;
+  }
+  .services-section p {
+    width: 13rem;
+    margin-left: .5rem;
+  }
+  .promote-section h1 {
+    font-size: 1.5rem;
+  }
+  .promote-section a {
+    margin-left: 3.5rem;
+  }
+  .promote-section img {
+    width: 10rem;
+  }
+  .promote-section .download img {
+    margin-left: 8rem;
+    margin-top: -21.5rem;
+    width: 5rem;
+  }
+  .promote-section .footer p {
+    font-size: .5rem;
   }
 }
