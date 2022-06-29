@@ -163,24 +163,18 @@
   line-height: 1.5rem;
 }
 
-@media only screen and (max-width: 1440px) {
-  .services .services-product .row {
-    margin: 0 9rem;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   .services {
-    height: 226rem;
+    height: 229rem;
   }
   .services .services-product .row {
-    margin: 0 2.5rem;
+    margin: 0 3rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .services {
-    height: 285rem;
+    height: 288rem;
   }
   .services .services-product .row {
     margin: 0 2rem;
@@ -189,48 +183,39 @@
 
 @media only screen and (max-width: 426px) {
   .services {
-    height: 384rem;
+    height: 809rem;
   }
   .services .services-product .row {
-    margin: 0 -6px;
-  }
-  .services .services-product .card {
-    margin: 5px 5px;
+    margin: 0 5.5rem;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .services {
-    height: 734rem;
-  }
-  .services .services-header h1 {
-    font-size: 3.5rem;
-  }
-  .services .services-header p {
-    font-size: 1.1rem;
+    height: 814rem;
   }
   .services .services-product .row {
-    margin: 0 4.5rem;
-  }
-  .services .services-product .card {
-    margin: 5px 5px;
+    margin: 0 4rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
   .services {
-    height: 737rem;
-  }
-  .services .services-header h1 {
-    font-size: 2.5rem;
-  }
-  .services .services-header p {
-    font-size: 1rem;
+    height: 817rem;
   }
   .services .services-product .row {
-    margin: 0 3rem;
+    margin: 0 2rem;
   }
-  .services .services-product .card {
-    margin: 5px 5px;
+}
+
+@media only screen and (max-width: 251px) {
+  .services {
+    height: 818rem;
+  }
+  .services .services-header {
+    padding: 0;
+  }
+  .services .services-product .row {
+    margin: 0 0;
   }
 }
