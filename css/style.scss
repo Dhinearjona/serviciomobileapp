@@ -94,8 +94,10 @@
 
 .cover {
     margin-top: -1.5rem;
+    margin-bottom: -.4rem;
 
     .cover-section {
+        margin-top: 1.5rem;
 
         img {
             width: 100%;
@@ -109,6 +111,170 @@
     @media only screen and (max-width: 768px) {
         .cover-section {
             margin-top: 1.5rem;
+        }
+    }
+}
+
+.services {
+    padding: 1rem;
+    background: var(--black);
+
+    .services-header {
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bolder;
+            color: var(--red);
+        }
+
+        p {
+            text-align: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+    }
+
+    .services-product {
+        height: 170rem;
+
+        .row {
+            margin: 0 11rem;
+        }
+
+        .column {
+            display: contents;
+        }
+
+        .card {
+            padding: 0 1rem;
+            width: 12rem;
+            margin: 1rem 1rem;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 10rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .services {
+
+        .services-product {
+
+            .row {
+                margin: 0 9rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .services {
+        height: 226rem;
+
+        .services-product {
+
+            .row {
+                margin: 0 2.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services {
+        height: 285rem;
+
+        .services-product {
+
+            .row {
+                margin: 0 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .services {
+        height: 384rem;
+
+        .services-product {
+
+            .row {
+                margin: 0 -6px;
+            }
+
+            .card {
+                margin: 5px 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .services {
+        height: 734rem;
+
+        .services-header {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        .services-product {
+
+            .row {
+                margin: 0 4.5rem;
+            }
+
+            .card {
+                margin: 5px 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .services {
+        height: 737rem;
+
+        .services-header {
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .services-product {
+
+            .row {
+                margin: 0 3rem;
+            }
+
+            .card {
+                margin: 5px 5px;
+            }
         }
     }
 }
