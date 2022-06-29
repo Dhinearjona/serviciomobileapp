@@ -2,338 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Home - Servicio</title>
+    <title>Home - Serviciomobileapp</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="img/LOGO.jpg" />
+    <div class="main">
+        <div class="Navbar">
+            <div class="Navbar__Link Navbar__Link-brand">
+                <a href=""><img src="img/LOGO.jpg" /></a>
+                </div>
+                <div class="Navbar__Link-toggle">
+                <i class="fas fa-bars"></i>
+                </div>
+            <nav class="Navbar__Items">
+                <a href="#" class="Navbar__Link">Home</a>
+                <a href="#" class="Navbar__Link">Contact</a>
+                <a href="#" class="Navbar__Link">About Us</div>
+            </nav>
         </div>
-        <input type="checkbox" id="menuBtn">
-        <label for="menuBtn" class="menuBtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <a href="#" class="btn btn-primary">Get the app</a>
-        </ul>
-    </nav>
+    </div>
 
     <div class="cover">
         <div class="cover-section">
             <img src="img/COVER2.jpg" />
-            <div class="cover2">
-                <img src="img/COVER.jpg" />
-            </div>
+            <img src="img/COVER.jpg" />
+            <video autoplay muted>
+                <source src="video/servicio3.mp4" type="video/mp4">
+                <source src="video/servicio3.mp4" type="video/ogg">
+            </video>
         </div>
     </div>
 
-    <div class="services" id="services">
-        <div class="services-section">
-            <h1>Our <span>Services</span></h1>
-            <p>Provide a general description of the items below and introduce the services you offer. Click on the text box to edit the content.</p>
-        </div>
+    <script>
+        function classToggle() {
+        const navs = document.querySelectorAll('.Navbar__Items')
+        
+        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
 
-        <div class="services-product">
-            <div class="container">
-                <div class="row">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/AIRCON CLEANER.jpg" />
-                            <h5>Aircon/REF Clear</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/AIRCON INSTALLER.jpg" />
-                            <h5>Aircon Installer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/BABYSITTER.jpg" />
-                            <h5>Babysitter</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/BARBER.jpg" />
-                            <h5>Barber</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/BEAUTICIAN.jpg" />
-                            <h5>Beautician</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/BODYGUARD.jpg" />
-                            <h5>Bodyguard</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CABITNET INSTALLER.jpg" />
-                            <h5>Cabinet Installer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CAR CLEANER.jpg" />
-                            <h5>Car Cleaner</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CAR MECHANIC.jpg" />
-                            <h5>Car Mechanic</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CAREGIVER.jpg" />
-                            <h5>Caregiver</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CARPENTER.jpg" />
-                            <h5>Carpenter</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CELLPHONE TECHNICIAN.png" />
-                            <h5>Cellphone Technician</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/CHINESE TUTOR.png" />
-                            <h5>Chinese Tutor</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/COMPUTER TECHNICIAN.jpg" />
-                            <h5>Computer Technician</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/COOK.jpg" />
-                            <h5>Cook</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/DOCTOR.jpg" />
-                            <h5>Doctor</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/DOCUMENT FIXER.png" />
-                            <h5>Document Fixer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/DRIVER.jpg" />
-                            <h5>Driver</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/ELECTRICIAN.jpg" />
-                            <h5>Electrician</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/ENGLISH TUTOR.png" />
-                            <h5>English Tutor</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/EVENT ORGANIZER.jpg" />
-                            <h5>Event Organizer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/GARDENER.jpg" />
-                            <h5>Gardener</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/GLASS INSTALLER.png" />
-                            <h5>Glass Installer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/GYM INSTRUCTOR.jpg" />
-                            <h5>Gym Instructor</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/HOUSE CLEANER.jpg" />
-                            <h5>House Cleaner</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/LANDSCAPER.jpg" />
-                            <h5>Landscaper</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/LAUNDRY HELPER.jpg" />
-                            <h5>Laundry Helper</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/MASON.jpg" />
-                            <h5>Mason</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/MASSAGE THERAPIST.jpg" />
-                            <h5>Glass Installer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/MIDWIFE.png" />
-                            <h5>Midwifer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/NURSE.jpg" />
-                            <h5>Nurse</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PABILI.png" />
-                            <h5>Pabili</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PAHATID.png" />
-                            <h5>Pahatid</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PAINTER.jpg" />
-                            <h5>Painter</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PETSITTER.jpg" />
-                            <h5>Petsitter</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PHOTOGRAPHER_VIDEOGRAPHER.jpg" />
-                            <h5>Photographer/Videographer</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PHYSICAL THERAPIST.jpg" />
-                            <h5>Physical Therapist</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PLUMBER.jpg" />
-                            <h5>Plumber</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PRIEST.png" />
-                            <h5>Priest</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/PROPERTY BROKER.jpg" />
-                            <h5>Property Broker</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/SWIMMING INSTRUCTOR.jpg" />
-                            <h5>Swimming Instructor</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/TOWING SERVICES.png" />
-                            <h5>Towning Services</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/TUTOR.jpg" />
-                            <h5>Tutor</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/VETERINARIAN.jpg" />
-                            <h5>Veterinarian</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/WELDER.jpg" />
-                            <h5>Welder</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="promotion">
-        <div class="promotion-section">
-            <h1>May Kakayahan at Abilidad pero walang Trabaho</h1>
-            <h2>Download the Servicio App</h2>
-            <a href="#" class="btn">Download</a>
-            <div class="app-image">
-                <img src="img/APP.png" />
-                <div class="apps">
-                    <img src="img/APPLICATIONS.png" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>© 2022 by SERVICIO. ALL RIGHTS RESERVED.</p>
-    </div>
-</div>
+        document.querySelector('.Navbar__Link-toggle')
+        .addEventListener('click', classToggle);
+    </script>
 </body>
 </html>

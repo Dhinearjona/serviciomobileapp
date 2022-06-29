@@ -1,18 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat',sans-serif;
-  height: 1rem;
+  font-family: 'Calibri',sans-serif;
 }
 
 :root {
-  --black: #121212;
+  --black: #000000;
   --white: #FFFFFF;
   --red: #FF0217;
   --yellow: #FEEA3B;
@@ -20,306 +14,93 @@ body {
   --lightgray: #5A5A5A;
 }
 
-nav {
-  position: absolute;
-  background: var(--black);
+.main {
   width: 100%;
-  height: 80px;
 }
 
-nav #menuBtn {
-  display: none;
-}
-
-nav .menuBtn {
-  font-size: 2rem;
+.main .Navbar {
+  background-color: var(--black);
+  display: flex;
+  padding: .5rem 150px;
+  font-family: sans-serif;
   color: var(--white);
-  float: right;
-  line-height: 80px;
-  margin-right: 2rem;
-  display: none;
+  align-items: center;
 }
 
-nav .logo {
+.main img {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.main .Navbar__Link {
+  padding: 0 1rem;
   color: var(--white);
-  font-size: 1.8rem;
-  display: inline-block;
-  height: 80px;
-  line-height: 80px;
-  padding: 0 2rem;
-}
-
-nav .logo img {
-  width: 3.5rem;
-  margin-top: -.7rem;
-}
-
-nav ul {
-  float: right;
-  margin-right: 2rem;
-}
-
-nav li {
-  list-style: none;
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 .2rem;
-}
-
-nav a {
-  color: var(--white);
-  font-size: 1rem;
-  padding: .5rem;
-  border-radius: 10px;
   text-decoration: none;
 }
 
-nav a:hover {
-  background: var(--red);
-  color: var(--white);
+.main .Navbar__Link:hover {
+  color: var(--red);
 }
 
-nav .active {
-  background: var(--red);
+.main .Navbar__Items {
+  display: flex;
+  margin-left: 2rem;
 }
 
-nav .btn {
-  padding: .5rem 1rem;
-  border-radius: 10px;
-  background: var(--yellow);
-  border: none;
-  color: var(--black);
-  transition: .5s;
+.main .Navbar__Link-toggle {
+  display: none;
 }
 
-nav .btn:hover {
-  background: var(--red);
+@media only screen and (max-width: 768px) {
+  .main .Navbar__Items,
+  .main .Navbar {
+    flex-direction: column;
+    padding: .5rem;
+  }
+  .main .Navbar__Items {
+    display: none;
+    padding: 0;
+  }
+  .main .Navbar__Link {
+    line-height: 3rem;
+    padding: 0;
+  }
+  .main .Navbar__Link:hover {
+    background: var(--lightgray);
+    color: var(--white);
+  }
+  .main .Navbar__ToggleShow {
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    font-size: 20px;
+    text-align: center;
+  }
+  .main .Navbar__Link-toggle {
+    align-self: flex-end;
+    padding-top: .3rem;
+    padding-right: 1rem;
+    font-size: 30px;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.cover {
+  margin-top: -1.5rem;
 }
 
 .cover .cover-section img {
   width: 100%;
-  margin-top: 5rem;
 }
 
-.cover .cover-section .cover2 img {
-  width: 100%;
-  margin-top: 0;
-}
-
-.cover .cover-section .cover2 video {
+.cover .cover-section video {
   width: 100%;
 }
 
-.services {
-  background: var(--darkgray);
-}
-
-.services .services-section {
-  padding: 1rem 1rem;
-  text-align: center;
-  align-items: center;
-}
-
-.services .services-section h1 {
-  font-size: 5rem;
-  font-weight: bolder;
-  color: var(--white);
-  margin-bottom: 0;
-}
-
-.services .services-section span {
-  color: var(--red);
-}
-
-.services .services-section p {
-  font-size: 20px;
-  color: var(--white);
-}
-
-.services .services-product {
-  padding: 3rem 1rem;
-}
-
-.services .services-product .container {
-  width: 1100px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.services .services-product .container .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.services .services-product .container .card {
-  flex: 1 1 9.5rem;
-  margin: 10px 20px;
-  align-self: normal;
-  text-align: center;
-  cursor: pointer;
-}
-
-.services .services-product .container img {
-  width: 125px;
-}
-
-.services .services-product .container h5 {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 10px 0;
-}
-
-.promotion {
-  background: var(--red);
-  padding: 1rem 1rem;
-  max-width: 100%;
-}
-
-.promotion h1 {
-  text-align: center;
-  padding-top: 1rem;
-  font-size: 3rem;
-  font-weight: bolder;
-  color: var(--white);
-}
-
-.promotion h2 {
-  text-align: center;
-  color: var(--white);
-  font-size: 24px;
-}
-
-.promotion a {
-  background: var(--white);
-  padding: 0.5rem 4rem;
-  margin: 1rem 25%;
-}
-
-.promotion a:hover {
-  background: var(--black);
-  color: var(--white);
-}
-
-.promotion img {
-  width: 13rem;
-  margin-left: 4rem;
-}
-
-.promotion .apps img {
-  margin-top: -32rem;
-  margin-left: 13rem;
-  width: 9rem;
-}
-
-.footer {
-  background: var(--black);
-  height: fit-content;
-}
-
-.footer p {
-  padding: 1rem 1rem;
-  text-align: center;
-  font-size: 1rem;
-  color: var(--white);
-}
-
-@media (max-width: 1023px) {
-  nav .menuBtn {
-    display: initial;
-  }
-  nav ul {
-    position: absolute;
-    background: var(--darkgray);
-    width: 100%;
-    height: 50vh;
-    top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all .5s;
-    left: -100%;
-  }
-  nav li {
-    display: block;
-    min-width: 80%;
-    text-align: center;
-    line-height: 4rem;
-  }
-  nav a {
-    display: block;
-    font-size: 1.2rem;
-  }
-  nav #menuBtn:checked ~ ul {
-    left: 0;
-  }
-  nav #menuBtn:checked ~ label.menuBtn i::before {
-    content: "\f00d";
-  }
-  nav .btn {
-    padding: 1rem 3rem;
-    border-radius: 10px;
-    background: var(--yellow);
-    border: none;
-    color: var(--black);
-    transition: .5s;
-  }
-  nav .btn:hover {
-    background: var(--black);
-  }
-}
-
-.services .services-section h1 {
-  font-size: 3rem;
-}
-
-.services .services-product {
-  padding: 1rem 1rem;
-}
-
-@media (max-width: 800px) {
-  .promotion {
-    padding: 1rem 1rem;
-  }
-  .promotion h1 {
-    padding: 1rem 1rem;
-    font-size: 3rem;
-  }
-  .promotion h2 {
-    font-size: 1.5rem;
-  }
-  .promotion img {
-    margin: 0 10rem;
-    width: 20rem;
-  }
-  .promotion .apps img {
-    width: 12rem;
-    margin-left: 25rem;
-    margin-top: -47rem;
-  }
-}
-
-@media (max-width: 359px) {
-  nav .logo {
-    font-size: 1.5rem;
-  }
-  nav ul {
-    padding: 0;
-  }
-  nav a {
-    padding: 0;
-  }
-  nav .btn {
-    padding: 1rem 3rem;
-    border-radius: 10px;
-    background: var(--yellow);
-    border: none;
-    color: var(--black);
-    transition: .5s;
-  }
-  nav .btn:hover {
-    background: var(--black);
+@media only screen and (max-width: 768px) {
+  .cover .cover-section {
+    margin-top: 1.5rem;
   }
 }
