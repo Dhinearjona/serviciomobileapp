@@ -1,82 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Ballet:opsz@16..72&family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
-  font-family: 'Calibri',sans-serif;
 }
 
-html {
+body {
+  font-family: 'Montserrat',sans-serif;
   height: 1rem;
 }
 
 :root {
   --black: #121212;
-  --white: #ffffff;
+  --white: #FFFFFF;
   --red: #FF0217;
   --yellow: #FEEA3B;
   --darkgray: #353535;
   --lightgray: #5A5A5A;
 }
 
-.main {
+nav {
+  position: absolute;
   background: var(--black);
-  padding: 0 150px;
+  width: 100%;
+  height: 80px;
 }
 
-.main .navbar-section img {
-  width: 5rem;
-  margin: .5rem .5rem;
+nav #menuBtn {
+  display: none;
 }
 
-.main .navbar-section ul {
-  display: flex;
-  margin-left: 3rem;
-}
-
-.main .navbar-section li {
-  margin: 0 2rem;
-  margin-top: -4.5rem;
-  list-style: none;
-}
-
-.main .navbar-section a {
-  font-size: 20px;
+nav .menuBtn {
+  font-size: 2rem;
   color: var(--white);
+  float: right;
+  line-height: 80px;
+  margin-right: 2rem;
+  display: none;
+}
+
+nav .logo {
+  color: var(--white);
+  font-size: 1.8rem;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 2rem;
+}
+
+nav .logo img {
+  width: 3.5rem;
+  margin-top: -.7rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 2rem;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 .2rem;
+}
+
+nav a {
+  color: var(--white);
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: 10px;
   text-decoration: none;
+}
+
+nav a:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+nav .active {
+  background: var(--red);
+}
+
+nav .btn {
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  background: var(--yellow);
+  border: none;
+  color: var(--black);
+  transition: .5s;
+}
+
+nav .btn:hover {
+  background: var(--red);
 }
 
 .cover .cover-section img {
   width: 100%;
-  margin-top: -1rem;
+  margin-top: 5rem;
+}
+
+.cover .cover-section .cover2 img {
+  width: 100%;
+  margin-top: 0;
+}
+
+.cover .cover-section .cover2 video {
+  width: 100%;
 }
 
 .services {
   background: var(--darkgray);
-  padding: 1rem 1rem;
 }
 
 .services .services-section {
+  padding: 1rem 1rem;
   text-align: center;
+  align-items: center;
 }
 
 .services .services-section h1 {
   font-size: 5rem;
   font-weight: bolder;
-  color: var(--red);
+  color: var(--white);
   margin-bottom: 0;
 }
 
+.services .services-section span {
+  color: var(--red);
+}
+
 .services .services-section p {
-  width: 55rem;
-  font-size: 1.5rem;
-  margin-left: 20rem;
-  margin-bottom: 0;
+  font-size: 20px;
   color: var(--white);
 }
 
 .services .services-product {
-  margin: 1rem 1rem;
+  padding: 3rem 1rem;
 }
 
 .services .services-product .container {
@@ -113,54 +174,43 @@ html {
 .promotion {
   background: var(--red);
   padding: 1rem 1rem;
-  height: 45rem;
+  max-width: 100%;
 }
 
-.promotion .promote-section {
-  margin: 0 250px;
-}
-
-.promotion .promote-section h1 {
-  width: 60rem;
-  font-family: 'Secular One',sans-serif;
-  font-weight: bolder;
-  font-size: 5rem;
-  color: var(--white);
-}
-
-.promotion .promote-section h5 {
+.promotion h1 {
+  text-align: center;
+  padding-top: 1rem;
   font-size: 3rem;
+  font-weight: bolder;
   color: var(--white);
 }
 
-.promotion .promote-section .download-btn {
-  margin-top: 2rem;
+.promotion h2 {
+  text-align: center;
+  color: var(--white);
+  font-size: 24px;
 }
 
-.promotion .promote-section .download-btn a {
+.promotion a {
   background: var(--white);
-  padding: 1rem 3rem;
-  color: var(--black);
-  text-decoration: none;
-  border-radius: 10px;
-  font-size: 15px;
+  padding: 0.5rem 4rem;
+  margin: 1rem 25%;
 }
 
-.promotion .promote-section .download-btn a:hover {
+.promotion a:hover {
   background: var(--black);
   color: var(--white);
 }
 
-.promotion .promote-section .download-btn .apps img {
-  width: 25rem;
-  margin-left: 32rem;
-  margin-top: -16rem;
+.promotion img {
+  width: 13rem;
+  margin-left: 4rem;
 }
 
-.promotion .promote-section .download-btn .apps .download img {
-  width: 20rem;
-  margin-left: 12rem;
-  margin-top: -33rem;
+.promotion .apps img {
+  margin-top: -32rem;
+  margin-left: 13rem;
+  width: 9rem;
 }
 
 .footer {
@@ -175,271 +225,101 @@ html {
   color: var(--white);
 }
 
-@media (max-width: 768px) {
-  .main {
-    width: 100%;
-    background: var(--black);
+@media (max-width: 1023px) {
+  nav .menuBtn {
+    display: initial;
   }
-  .main .navbar-section img {
-    width: 5rem;
-    margin: 1rem 5rem;
-  }
-  .main .navbar-section ul {
-    display: flex;
-    margin-left: 10rem;
-  }
-  .main .navbar-section li {
-    margin: 0 2rem;
-    margin-top: -5rem;
-  }
-  .main .navbar-section a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-  .main .navbar-section .active {
-    color: var(--red);
-  }
-  .cover-section img {
-    width: 100%;
-    margin-top: -1rem;
-  }
-  .services {
-    background: var(--lightgray);
-  }
-  .services .services-section {
-    text-align: center;
-    padding: 1rem 1rem;
-  }
-  .services .services-section h1 {
-    font-size: 3rem;
-    font-weight: bolder;
-    color: var(--red);
-  }
-  .services .services-section p {
-    color: var(--white);
-  }
-  .services .services-product {
-    padding: 1rem 1rem;
-  }
-  .services .services-product .container {
-    width: 1100px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .services .services-product .container .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .services .services-product .container .card {
-    flex: 1 1 9.5rem;
-    margin: 10px 20px;
-    align-self: normal;
-    text-align: center;
-    cursor: pointer;
-  }
-  .services .services-product .container img {
-    width: 125px;
-  }
-  .services .services-product .container h5 {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .main {
-    background: var(--black);
-    padding-bottom: 1rem;
-  }
-  .main img {
-    width: 5rem;
-    margin: .5rem 12.5rem;
-  }
-  .main ul {
-    display: flex;
-    margin: 0 5.5rem;
-  }
-  .main li {
-    padding: 0 20px;
-    list-style: none;
-    margin-top: .5rem;
-  }
-  .main a {
-    color: var(--white);
-    text-decoration: none;
-  }
-  .main .active {
-    color: var(--red);
-  }
-  .cover-section img {
-    width: 100%;
-  }
-  .services-section {
+  nav ul {
+    position: absolute;
     background: var(--darkgray);
-    padding-bottom: 2rem;
-  }
-  .services-section h1 {
-    text-align: center;
-    padding: 1rem;
-    font-size: 4rem;
-    font-weight: bolder;
-    color: var(--red);
-  }
-  .services-section p {
-    width: 25rem;
-    text-align: center;
-    margin-top: -1rem;
-    margin-left: 2.5rem;
-    font-size: 12px;
-    color: var(--white);
-  }
-  .services-section .container {
-    width: 1100px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .services-section .container .row {
+    width: 100%;
+    height: 50vh;
+    top: 80px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    transition: all .5s;
+    left: -100%;
   }
-  .services-section .container .card {
-    flex: 1 1 9.5rem;
-    margin: 10px 20px;
-    align-self: normal;
+  nav li {
+    display: block;
+    min-width: 80%;
     text-align: center;
-    cursor: pointer;
+    line-height: 4rem;
   }
-  .services-section .container img {
-    width: 125px;
+  nav a {
+    display: block;
+    font-size: 1.2rem;
   }
-  .services-section .container h5 {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 10px 0;
+  nav #menuBtn:checked ~ ul {
+    left: 0;
   }
-  .promote-section {
-    background: var(--red);
+  nav #menuBtn:checked ~ label.menuBtn i::before {
+    content: "\f00d";
   }
-  .promote-section h1 {
-    font-family: 'Montserrat',sans-serif;
-    text-align: center;
-    padding-top: 2.5rem;
-    font-size: 2.5rem;
-    font-weight: 1000;
-    color: var(--white);
-  }
-  .promote-section h5 {
-    font-family: 'Montserrat',sans-serif;
-    font-size: 1.5rem;
-    margin: 1rem 2rem;
-    font-weight: 800;
-    color: var(--white);
-    text-align: center;
-  }
-  .promote-section a {
-    background: var(--white);
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    margin: 0 11rem;
-    text-decoration: none;
+  nav .btn {
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background: var(--yellow);
+    border: none;
     color: var(--black);
+    transition: .5s;
   }
-  .promote-section a:hover {
+  nav .btn:hover {
     background: var(--black);
-    color: var(--white);
-  }
-  .promote-section img {
-    width: 25rem;
-    border-radius: 30px;
-    margin: 0rem 1rem;
-  }
-  .promote-section .download {
-    margin-top: -1rem;
-  }
-  .promote-section .download img {
-    width: 10rem;
-    border-radius: 30px;
-    margin-top: -55rem;
-    margin-left: 18rem;
-  }
-  .footer {
-    height: 0;
-  }
-  .footer p {
-    background: var(--black);
-    padding: 1rem;
-    text-align: center;
-    color: var(--white);
-    font-weight: 1000;
-    font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 356px) {
-  .main .navbar-section img {
-    margin-left: 7.5rem;
+.services .services-section h1 {
+  font-size: 3rem;
+}
+
+.services .services-product {
+  padding: 1rem 1rem;
+}
+
+@media (max-width: 800px) {
+  .promotion {
+    padding: 1rem 1rem;
   }
-  .main .navbar-section ul {
-    margin: 0 1rem;
-  }
-  .services-section h1 {
+  .promotion h1 {
+    padding: 1rem 1rem;
     font-size: 3rem;
   }
-  .services-section p {
+  .promotion h2 {
+    font-size: 1.5rem;
+  }
+  .promotion img {
+    margin: 0 10rem;
     width: 20rem;
-    margin-left: .5rem;
   }
-  .promote-section h5 {
-    font-size: 1rem;
-  }
-  .promote-section a {
-    margin-left: 7rem;
-  }
-  .promote-section img {
-    width: 15rem;
-  }
-  .promote-section .download img {
-    margin-top: -33rem;
-    margin-left: 11rem;
-    width: 8rem;
+  .promotion .apps img {
+    width: 12rem;
+    margin-left: 25rem;
+    margin-top: -47rem;
   }
 }
 
-@media (max-width: 240px) {
-  .main .navbar-section img {
-    margin-left: 4rem;
-  }
-  .main .navbar-section ul {
-    margin-left: -2.8rem;
-  }
-  .services-section h1 {
-    font-size: 2rem;
-  }
-  .services-section p {
-    width: 13rem;
-    margin-left: .5rem;
-  }
-  .promote-section h1 {
+@media (max-width: 359px) {
+  nav .logo {
     font-size: 1.5rem;
   }
-  .promote-section a {
-    margin-left: 3.5rem;
+  nav ul {
+    padding: 0;
   }
-  .promote-section img {
-    width: 10rem;
+  nav a {
+    padding: 0;
   }
-  .promote-section .download img {
-    margin-left: 8rem;
-    margin-top: -21.5rem;
-    width: 5rem;
+  nav .btn {
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background: var(--yellow);
+    border: none;
+    color: var(--black);
+    transition: .5s;
   }
-  .promote-section .footer p {
-    font-size: .5rem;
+  nav .btn:hover {
+    background: var(--black);
   }
 }

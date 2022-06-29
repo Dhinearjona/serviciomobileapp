@@ -1,52 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Ballet:opsz@16..72&family=Dancing+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
-
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
-    font-family: 'Calibri',sans-serif;
 }
 
-html {
+body {
+    font-family: 'Montserrat',sans-serif;
     height: 1rem;
 }
 
 :root {
     --black: #121212;
-    --white: #ffffff;
+    --white: #FFFFFF;
     --red: #FF0217;
     --yellow: #FEEA3B;
     --darkgray: #353535;
     --lightgray: #5A5A5A;
 }
 
-.main {
+nav {
+    position: absolute;
     background: var(--black);
-    padding: 0 150px;
+    width: 100%;
+    height: 80px;
 
-    .navbar-section {
+    #menuBtn {
+        display: none;
+    }
+
+    .menuBtn {
+        font-size: 2rem;
+        color: var(--white);
+        float:right;
+        line-height: 80px;
+        margin-right:2rem;
+        display:none;
+    }
+
+    .logo {
+        color: var(--white);
+        font-size: 1.8rem;
+        display: inline-block;
+        height: 80px;
+        line-height: 80px;
+        padding: 0 2rem;
 
         img {
-            width: 5rem;
-            margin: .5rem .5rem;
+            width: 3.5rem;
+            margin-top: -.7rem;
         }
+    }
 
-        ul {
-            display: flex;
-            margin-left: 3rem;
-        }
+    ul {
+        float: right;
+        margin-right: 2rem;
+    }
 
-        li {
-            margin: 0 2rem;
-            margin-top: -4.5rem;
-            list-style: none;
-        }
+    li {
+        list-style: none;
+        display: inline-block;
+        line-height: 80px;
+        margin:0 .2rem;
+    }
 
-        a {
-            font-size: 20px;
-            color: var(--white);
-            text-decoration: none;
-        }
+    a {
+        color: var(--white);
+        font-size:1rem;
+        padding:.5rem;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: var(--red);
+        color: var(--white);
+    }
+
+    .active {
+        background: var(--red);
+    }
+
+    .btn {
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        background: var(--yellow);
+        border: none;
+        color: var(--black);
+        transition: .5s;
+    }
+
+    .btn:hover {
+        background: var(--red);
     }
 }
 
@@ -56,36 +102,50 @@ html {
 
         img {
             width: 100%;
-            margin-top: -1rem;
+            margin-top: 5rem;
+        }
+
+        .cover2 {
+
+            img {
+                width: 100%;
+                margin-top: 0;
+            }
+
+            video {
+                width: 100%;
+            }
         }
     }
 }
 
 .services {
     background: var(--darkgray);
-    padding: 1rem 1rem;
 
     .services-section {
+        padding: 1rem 1rem;
         text-align: center;
+        align-items: center;
 
         h1 {
             font-size: 5rem;
             font-weight: bolder;
-            color: var(--red);
+            color: var(--white);
             margin-bottom: 0;
         }
 
+        span {
+            color: var(--red);
+        }
+
         p {
-            width: 55rem;
-            font-size: 1.5rem;
-            margin-left: 20rem;
-            margin-bottom: 0;
+            font-size: 20px;
             color: var(--white);
         }
     }
 
     .services-product {
-        margin: 1rem 1rem;
+        padding: 3rem 1rem;
 
         .container {
             width: 1100px;
@@ -123,61 +183,48 @@ html {
 .promotion {
     background: var(--red);
     padding: 1rem 1rem;
-    height: 45rem;
+    max-width: 100%;
 
-    .promote-section {
-        margin: 0 250px;
+    h1 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 3rem;
+        font-weight: bolder;
+        color: var(--white);
+    }
 
-        h1 {
-            width: 60rem;
-            font-family: 'Secular One',sans-serif;
-            font-weight: bolder;
-            font-size: 5rem;
-            color: var(--white);
-        }
+    h2 {
+        text-align: center;
+        color: var(--white);
+        font-size: 24px;
+    }
 
-        h5 {
-            font-size: 3rem;
-            color: var(--white);
-        }
+    a {
+        background: var(--white);
+        padding: 0.5rem 4rem;
+        margin: 1rem 25%;
+    }
 
-        .download-btn {
-            margin-top: 2rem;
+    a:hover {
+        background: var(--black);
+        color: var(--white);
+    }
 
-            a {
-                background: var(--white);
-                padding: 1rem 3rem;
-                color: var(--black);
-                text-decoration: none;
-                border-radius: 10px;
-                font-size: 15px;
-            }
+    img {
+        width: 13rem;
+        margin-left: 4rem;
+    }
 
-            a:hover {
-                background: var(--black);
-                color: var(--white);
-            }
+    .apps {
 
-            .apps {
-
-                img {
-                    width: 25rem;
-                    margin-left: 32rem;
-                    margin-top: -16rem;
-                }
-
-                .download {
-
-                    img {
-                        width: 20rem;
-                        margin-left: 12rem;
-                        margin-top: -33rem;
-                    }
-                }
-            }
+        img {
+            margin-top: -32rem;
+            margin-left: 13rem;
+            width: 9rem;
         }
     }
 }
+
 
 .footer {
     background: var(--black);
@@ -192,372 +239,132 @@ html {
 }
 
 
+@media (max-width:1023px){
 
+    nav {
 
-
-@media (max-width: 768px) {
-    .main {
-        width: 100%;
-        background: var(--black);
-
-        .navbar-section {
-
-            img {
-                width: 5rem;
-                margin: 1rem 5rem;
-            }
-
-            ul {
-                display: flex;
-                margin-left: 10rem;
-            }
-
-            li {
-                margin: 0 2rem;
-                margin-top: -5rem;
-            }
-
-            a {
-                color: var(--white);
-                text-decoration: none;
-                font-size: 1.5rem;
-            }
-
-            .active {
-                color: var(--red);
-            }
+        .menuBtn {
+            display: initial;
         }
-    }
-
-    .cover-section {
-
-        img {
-            width: 100%;
-            margin-top: -1rem;
-        }
-    }
-
-    .services {
-        background: var(--lightgray);
-
-        .services-section {
-            text-align: center;
-            padding: 1rem 1rem;
-
-            h1 {
-                font-size: 3rem;
-                font-weight: bolder;
-                color: var(--red);
-            }
-
-            p {
-                color: var(--white);
-            }
-        }
-
-        .services-product {
-            padding: 1rem 1rem;
-
-            .container {
-                width: 1100px;
-                max-width: 100%;
-                margin: 0 auto;
-            
-                .row {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-            
-                .card {
-                    flex: 1 1 9.5rem;
-                    margin: 10px 20px;
-                    align-self: normal;
-                    text-align: center;
-                    cursor: pointer;
-                }
-            
-                img {
-                    width: 125px;
-                }
-            
-                h5 {
-                    font-size: 1rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    margin: 10px 0;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .main {
-        background: var(--black);
-        padding-bottom: 1rem;
         
-        img {
-            width: 5rem;
-            margin: .5rem 12.5rem;
-        }
-
         ul {
+            position: absolute;
+            background: var(--darkgray);
+            width: 100%;
+            height: 50vh;
+            top: 80px;
             display: flex;
-            margin: 0 5.5rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all .5s;
+            left:-100%;
         }
 
         li {
-            padding: 0 20px;
-            list-style: none;
-            margin-top: .5rem;
+            display:block;
+            min-width:80%;
+            text-align: center;
+            line-height: 4rem;
         }
 
         a {
-            color: var(--white);
-            text-decoration: none;
+            display:block;
+            font-size:1.2rem;
         }
 
-        .active {
-            color: var(--red);
-        }
-    }
-
-    .cover-section {
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .services-section {
-        background: var(--darkgray);
-        padding-bottom: 2rem;
-
-        h1 {
-            text-align: center;
-            padding: 1rem;
-            font-size: 4rem;
-            font-weight: bolder;
-            color: var(--red);
+        #menuBtn:checked ~ ul {
+            left:0;
         }
 
-        p {
-            width: 25rem;
-            text-align: center;
-            margin-top: -1rem;
-            margin-left: 2.5rem;
-            font-size: 12px;
-            color: var(--white);
+        #menuBtn:checked ~ label.menuBtn i::before{
+            content: "\f00d";
         }
 
-        .container {
-            width: 1100px;
-            max-width: 100%;
-            margin: 0 auto;
-        
-            .row {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-        
-            .card {
-                flex: 1 1 9.5rem;
-                margin: 10px 20px;
-                align-self: normal;
-                text-align: center;
-                cursor: pointer;
-            }
-        
-            img {
-                width: 125px;
-            }
-        
-            h5 {
-                font-size: 1rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                margin: 10px 0;
-            }
-        }
-    }
-
-    .promote-section {
-        background: var(--red);
-
-        h1 {
-            font-family: 'Montserrat',sans-serif;
-            text-align: center;
-            padding-top: 2.5rem;
-            font-size: 2.5rem;
-            font-weight: 1000;
-            color: var(--white);
-        }
-
-        h5 {
-            font-family: 'Montserrat',sans-serif;
-            font-size: 1.5rem;
-            margin: 1rem 2rem;
-            font-weight: 800;
-            color: var(--white);
-            text-align: center;
-        }
-
-        a {
-            background: var(--white);
-            padding: 0.5rem 1.5rem;
-            border-radius: 5px;
-            margin: 0 11rem;
-            text-decoration: none;
+        .btn {
+            padding: 1rem 3rem;
+            border-radius: 10px;
+            background: var(--yellow);
+            border: none;
             color: var(--black);
+            transition: .5s;
         }
 
-        a:hover {
+        .btn:hover {
             background: var(--black);
-            color: var(--white);
-        }
-
-        img {
-            width: 25rem;
-            border-radius: 30px;
-            margin: 0rem 1rem;
-        }
-
-        .download {
-            margin-top: -1rem;
-
-            img {
-                width: 10rem;
-                border-radius: 30px;
-                margin-top: -55rem;
-                margin-left: 18rem;
-            }
-        }
-    }
-
-    .footer {
-        height: 0;
-
-        p {
-            background: var(--black);
-            padding: 1rem;
-            text-align: center;
-            color: var(--white);
-            font-weight: 1000;
-            font-size: 14px;
         }
     }
 }
 
-@media only screen and (max-width: 356px) {
-    .main {
-
-        .navbar-section {
-
-            img {
-                margin-left: 7.5rem;
-            }
-
-            ul {
-                margin: 0 1rem;
-            }
-        }
-    }
-
+.services {
+    
     .services-section {
 
         h1 {
             font-size: 3rem;
         }
-
-        p {
-            width: 20rem;
-            margin-left: .5rem;
-        }
     }
 
-    .promote-section {
+    .services-product {
+        padding: 1rem 1rem;
+    }
+}
 
-        h5 {
-            font-size: 1rem;
+@media (max-width: 800px) {
+    .promotion {
+        padding: 1rem 1rem;
+
+        h1 {
+            padding: 1rem 1rem;
+            font-size: 3rem;
         }
 
-        a {
-            margin-left: 7rem;
+        h2 {
+            font-size: 1.5rem;
         }
 
         img {
-            width: 15rem;
+            margin: 0 10rem;
+            width: 20rem;
         }
-
-        .download {
+        .apps {
 
             img {
-                margin-top: -33rem;
-                margin-left: 11rem;
-                width: 8rem;
+                width: 12rem;
+                margin-left: 25rem;
+                margin-top: -47rem;
             }
         }
     }
 }
 
-@media (max-width: 240px) {
-    .main {
 
-        .navbar-section {
+@media (max-width: 359px){
+    nav {
 
-            img {
-                margin-left: 4rem;
-            }
-
-            ul {
-                margin-left: -2.8rem;
-            }
-        }
-    }
-
-    .services-section {
-
-        h1 {
-            font-size: 2rem;
+        .logo {
+            font-size:1.5rem;
         }
 
-        p {
-            width: 13rem;
-            margin-left: .5rem;
-        }
-    }
-
-    .promote-section {
-        
-        h1 {
-            font-size: 1.5rem;
+        ul {
+            padding: 0;
         }
 
         a {
-            margin-left: 3.5rem;
+            padding: 0;
         }
 
-        img {
-            width: 10rem;
+        .btn {
+            padding: 1rem 3rem;
+            border-radius: 10px;
+            background: var(--yellow);
+            border: none;
+            color: var(--black);
+            transition: .5s;
         }
 
-        .download {
-
-            img {
-                margin-left: 8rem;
-                margin-top: -21.5rem;
-                width: 5rem;
-            }
-        }
-
-        .footer {
-
-            p {
-                font-size: .5rem;
-            }
+        .btn:hover {
+            background: var(--black);
         }
     }
-
 }

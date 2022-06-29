@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <title>Servicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Home - Servicio</title>
 </head>
 <body>
-    <div class="main">
-        <div class="navbar-section">
+    <nav>
+        <div class="logo">
             <img src="img/LOGO.jpg" />
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
         </div>
-    </div>
+        <input type="checkbox" id="menuBtn">
+        <label for="menuBtn" class="menuBtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <a href="#" class="btn btn-primary">Get the app</a>
+        </ul>
+    </nav>
 
     <div class="cover">
         <div class="cover-section">
-            <img src="img/COVER.jpg" />
+            <img src="img/COVER2.jpg" />
+            <div class="cover2">
+                <img src="img/COVER.jpg" />
+            </div>
         </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="services-section">
-            <h1>Our Services</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequuntur ad fugiat explicabo doloremque minima vitae omnis perspiciatis odio qui, debitis architecto.</p>
+            <h1>Our <span>Services</span></h1>
+            <p>Provide a general description of the items below and introduce the services you offer. Click on the text box to edit the content.</p>
         </div>
 
         <div class="services-product">
@@ -313,21 +319,18 @@
     </div>
 
     <div class="promotion">
-        <div class="promote-section">
-            <h1>May kakayahan at Abilidad pero walang Trabaho.</h1>
-                <h5>Download the Servicio App</h5>
-                    <div class="download-btn">
-                        <a href="#">Download</a>
-                        <div class="apps">
-                            <img src="img/APP.png" />
-                        <div class="download">
-                            <img src="img/APPLICATIONS.png" />
-                    </div>
+        <div class="promotion-section">
+            <h1>May Kakayahan at Abilidad pero walang Trabaho</h1>
+            <h2>Download the Servicio App</h2>
+            <a href="#" class="btn">Download</a>
+            <div class="app-image">
+                <img src="img/APP.png" />
+                <div class="apps">
+                    <img src="img/APPLICATIONS.png" />
                 </div>
             </div>
         </div>
     </div>
-</div>
     <div class="footer">
         <p>© 2022 by SERVICIO. ALL RIGHTS RESERVED.</p>
     </div>
