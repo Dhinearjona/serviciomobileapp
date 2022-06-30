@@ -175,37 +175,32 @@
   width: 100%;
 }
 
-.advertisement,
-.ads-images {
+.advertisement {
   background: var(--red);
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1rem 3rem;
+  padding: 1rem 15rem;
   align-items: center;
 }
 
-.advertisement .ads-section h1,
-.ads-images .ads-section h1 {
+.advertisement .ads-section h1 {
   font-weight: bolder;
   font-size: 5em;
   color: var(--white);
 }
 
-.advertisement .ads-section h2,
-.ads-images .ads-section h2 {
+.advertisement .ads-section h2 {
   font-weight: 600;
   color: var(--white);
   font-size: 3em;
 }
 
-.advertisement .ads-section .download,
-.ads-images .ads-section .download {
+.advertisement .ads-section .download {
   margin: 2rem 0;
 }
 
-.advertisement .ads-section .download a,
-.ads-images .ads-section .download a {
+.advertisement .ads-section .download a {
   display: inline-block;
   background: var(--white);
   color: var(--black);
@@ -216,15 +211,25 @@
   border-radius: 10px;
 }
 
-.advertisement .ads-section .download a:hover,
-.ads-images .ads-section .download a:hover {
+.advertisement .ads-section .download a:hover {
   background: var(--black);
   color: var(--white);
 }
 
-.advertisement .ads-images img,
-.ads-images .ads-images img {
+.advertisement .ads-images img {
   width: 25rem;
+}
+
+@media only screen and (max-width: 1440px) {
+  .advertisement {
+    padding: 1rem 18rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .advertisement {
+    padding: 1rem 9rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {

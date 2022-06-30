@@ -186,13 +186,12 @@
     }
 }
 
-.advertisement,
-.ads-images {
+.advertisement {
     background: var(--red);
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem 3rem;
+    padding: 1rem 15rem;
     align-items: center;
 
     .ads-section {
@@ -235,6 +234,18 @@
         img {
             width: 25rem;
         }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .advertisement {
+        padding: 1rem 18rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .advertisement {
+        padding: 1rem 9rem;
     }
 }
 
