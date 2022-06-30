@@ -260,9 +260,13 @@
         }
 
             .ads-images {
-                all: unset;
                 display: block;
-                text-align: center;
+                padding: 0 1rem;
+
+                img {
+                    display: block;
+                    max-width: 100%;
+                }
             }
         }
     }

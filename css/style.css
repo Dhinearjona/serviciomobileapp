@@ -243,9 +243,12 @@
     text-align: center;
   }
   .advertisement .ads-images {
-    all: unset;
     display: block;
-    text-align: center;
+    padding: 0 1rem;
+  }
+  .advertisement .ads-images img {
+    display: block;
+    max-width: 100%;
   }
 }
 
