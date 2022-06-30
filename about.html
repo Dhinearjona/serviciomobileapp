@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/about.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>About Us - Serviciomobileapp</title>
+</head>
+<body>
+    <div class="main">
+        <div class="Navbar">
+            <div class="Navbar__Link Navbar__Link-brand">
+                <a href=""><img src="img/LOGO.jpg" /></a>
+                </div>
+                <div class="Navbar__Link-toggle">
+                <i class="fas fa-bars"></i>
+                </div>
+            <nav class="Navbar__Items">
+                <a href="index.html" class="Navbar__Link">Home</a>
+                <a href="contact.html" class="Navbar__Link">Contact</a>
+                <a href="about.html" class="Navbar__Link">About Us</a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="cover">
+    <div class="cover-section">
+        <video autoplay muted>
+            <source src="video/servicio1.mp4" type="video/mp4">
+            <source src="video/servicio1.mp4" type="video/ogg">
+        </video>
+    </div>
+    <div class="cover-details">
+        <h1>Servicio</h1>
+        <p>Every website has a story, and your visitors want to hear yours. This space is a great opportunity to give a full background on who you are, what your team does, and what your site has to offer. Double click on the text box to start editing your content and make sure to add all the relevant details you want site visitors to know.
+        <br><br>If you're a business, talk about how you started and share your professional journey. Explain your core values, your commitment to customers, and how you stand out from the crowd. Add a photo, gallery, or video for even more engagement.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2022 by SERVICIO. ALL RIGHTS RESERVED.</p>
+    <div class="icons">
+        
+    </div>
+</div>
+
+<script>
+    function classToggle() {
+    const navs = document.querySelectorAll('.Navbar__Items')
+    
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    }
+
+    document.querySelector('.Navbar__Link-toggle')
+    .addEventListener('click', classToggle);
+</script>
+</body>
+</html>
