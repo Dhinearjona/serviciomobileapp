@@ -150,50 +150,28 @@
         }
 
         .card {
-            width: 12rem;
-            box-shadow: 0 4px 8px 0 #00000033;
-            padding: 1rem 1rem;
-            margin: .5rem .5rem;
-            text-align: center;
-            background: var(--white);
+            margin: 1rem auto;
+            max-width: 18rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+            grid-auto-rows: auto;
+            gap: 1rem;
+            padding-top: 30px;
         }
 
         img {
             width: 10rem;
+            height: 10rem;
+            margin: 0 2rem;
+            object-fit: cover;
+            display: block;
+            align-items: center;
         }
 
         p {
             text-align: center;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        .services-product {
-
-            .row {
-                margin: 0 50px;
-            }
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .services-product {
-
-            .row {
-                margin: 0 50px;
-            }
-        }
-    }
-
-    @media screen and (max-width: 350px) {
-        .services-product {
-
-            .row {
-                margin: 0 64.5px;
-            }
+            font-size: 1rem;
+            font-weight: bolder;
         }
     }
 }
@@ -202,86 +180,92 @@
 
     .promote-section {
 
-        video {
+        .video {
             width: 100%;
         }
     }
+}
 
-    .promote-download {
-        background: var(--red);
-        height: 40rem;
-        padding: 0 10rem;
-        display: flex;
-        align-items: center;
+.advertisement,
+.ads-images {
+    background: var(--red);
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 5rem;
+    align-items: center;
+
+    .ads-section {
 
         h1 {
-            color: var(--white);
             font-weight: bolder;
-            font-size: 5rem;
+            font-size: 5em;
+            color: var(--white);
         }
 
         h2 {
+            font-weight: 800;
             color: var(--white);
-            font-size: 40px;
+            font-size: 3em;
         }
 
         .download {
             margin: 2rem 0;
 
             a {
+                display: inline-block;
                 background: var(--white);
-                padding: 1rem 3rem;
-                text-decoration: none;
                 color: var(--black);
+                padding: 1rem 2rem;
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 1.1em;
                 border-radius: 10px;
             }
-    
+
             a:hover {
                 background: var(--black);
                 color: var(--white);
             }
         }
-
-        img {
-            width: 10rem;
-        }
-
-        .grid-img {
-
-            img {
-                width: 30rem;
-            }
-        }
     }
 
-@media screen and (max-width: 351px) {
-        .promote-download {
-            height: auto;
-            text-align: center;
-            padding: 0;
-            display: grid;
-    
-            .grid-text {
-                width: 21rem;
-    
-                h1 {
-                    font-size: 3.5rem;
-                }
-    
-                .download {
-                    margin-left: 2.1px;
-                }
-            }
-    
-            .grid-img {
-    
-                img {
-                    width: 20rem;
-                }
-            }
+    .ads-images {
+
+        img {
+            width: 25rem;
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .advertisement {
+        display: block;
+        padding: 1rem;
+
+        .ads-section {
+
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            .download {
+                display: block;
+                text-align: center;
+            }
+        }
+
+            .ads-images {
+                all: unset;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
 
 .footer {
     background: var(--black);
@@ -289,8 +273,8 @@
     padding: .5rem;
     text-align: center;
 
-    p {
-        color: var(--white);
-        padding: .5rem 0;
+        p {
+            color: var(--white);
+            padding: .5rem 0;
+        }
     }
-}
