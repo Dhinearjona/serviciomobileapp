@@ -183,3 +183,84 @@
     margin: 0 64.5px;
   }
 }
+
+.promotion .promote-section video {
+  width: 100%;
+}
+
+.promotion .promote-download {
+  background: var(--red);
+  height: 40rem;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.promotion .promote-download h1 {
+  color: var(--white);
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.promotion .promote-download h2 {
+  color: var(--white);
+  font-size: 40px;
+}
+
+.promotion .promote-download .download {
+  margin: 2rem 0;
+}
+
+.promotion .promote-download .download a {
+  background: var(--white);
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: var(--black);
+  border-radius: 10px;
+}
+
+.promotion .promote-download .download a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.promotion .promote-download img {
+  width: 10rem;
+}
+
+.promotion .promote-download .grid-img img {
+  width: 30rem;
+}
+
+@media screen and (max-width: 351px) {
+  .promotion .promote-download {
+    height: auto;
+    text-align: center;
+    padding: 0;
+    display: grid;
+  }
+  .promotion .promote-download .grid-text {
+    width: 21rem;
+  }
+  .promotion .promote-download .grid-text h1 {
+    font-size: 3.5rem;
+  }
+  .promotion .promote-download .grid-text .download {
+    margin-left: 2.1px;
+  }
+  .promotion .promote-download .grid-img img {
+    width: 20rem;
+  }
+}
+
+.footer {
+  background: var(--black);
+  height: 3.5rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--white);
+  padding: .5rem 0;
+}
