@@ -176,7 +176,23 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 376px) {
+    .services {
+
+        .services-header {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
     .services {
 
         .services-header {
@@ -186,7 +202,7 @@
             }
 
             p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
     }
