@@ -247,10 +247,14 @@
 
             h1 {
                 text-align: center;
+                font-size: 40px;
+                font-weight: bolder;
             }
 
             h2 {
                 text-align: center;
+                font-size: 30px;
+                font-weight: 500;
             }
 
             .download {
@@ -273,12 +277,13 @@
 
 .footer {
     background: var(--black);
-    height: 3.5rem;
+    height: auto;
     padding: .5rem;
     text-align: center;
 
         p {
             color: var(--white);
-            padding: .5rem 0;
+            align-items: center;
+            margin: 0;
         }
     }
