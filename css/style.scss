@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Calibri',sans-serif;
+    font-family: 'Arial';
 }
 
 :root {
@@ -125,7 +125,7 @@
         text-align: center;
 
         h1 {
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: bolder;
             color: var(--red);
         }
@@ -133,7 +133,7 @@
         p {
             text-align: center;
             color: var(--white);
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
 
@@ -176,38 +176,6 @@
     }
 }
 
-@media screen and (max-width: 376px) {
-    .services {
-
-        .services-header {
-
-            h1 {
-                font-size: 3.5rem;
-            }
-
-            p {
-                font-size: 1.1rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .services {
-
-        .services-header {
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-
 .promotion {
 
     .promote-section {
@@ -236,7 +204,7 @@
         }
 
         h2 {
-            font-weight: 800;
+            font-weight: 600;
             color: var(--white);
             font-size: 3em;
         }

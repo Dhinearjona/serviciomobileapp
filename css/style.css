@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Calibri',sans-serif;
+  font-family: 'Arial';
 }
 
 :root {
@@ -122,7 +122,7 @@
 }
 
 .services .services-header h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bolder;
   color: var(--red);
 }
@@ -130,7 +130,7 @@
 .services .services-header p {
   text-align: center;
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .services .services-product {
@@ -171,24 +171,6 @@
   font-weight: bolder;
 }
 
-@media screen and (max-width: 376px) {
-  .services .services-header h1 {
-    font-size: 3.5rem;
-  }
-  .services .services-header p {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .services .services-header h1 {
-    font-size: 3rem;
-  }
-  .services .services-header p {
-    font-size: 1.2rem;
-  }
-}
-
 .promotion .promote-section .video {
   width: 100%;
 }
@@ -212,7 +194,7 @@
 
 .advertisement .ads-section h2,
 .ads-images .ads-section h2 {
-  font-weight: 800;
+  font-weight: 600;
   color: var(--white);
   font-size: 3em;
 }
