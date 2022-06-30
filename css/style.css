@@ -171,6 +171,15 @@
   font-weight: bolder;
 }
 
+@media screen and (max-width: 412px) {
+  .services .services-header h1 {
+    font-size: 3.5rem;
+  }
+  .services .services-header p {
+    font-size: 20px;
+  }
+}
+
 .promotion .promote-section .video {
   width: 100%;
 }
