@@ -154,6 +154,7 @@
   grid-auto-rows: auto;
   gap: 1rem;
   padding-top: 30px;
+  cursor: pointer;
 }
 
 .services .services-product img {
@@ -186,14 +187,15 @@
 
 .advertisement .ads-section h1 {
   font-weight: bolder;
-  font-size: 5em;
+  font-size: 4rem;
   color: var(--white);
 }
 
 .advertisement .ads-section h2 {
   font-weight: 600;
   color: var(--white);
-  font-size: 3em;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 .advertisement .ads-section .download {
@@ -224,11 +226,23 @@
   .advertisement {
     padding: 1rem 18rem;
   }
+  .advertisement .ads-section h1 {
+    font-size: 3.5rem;
+  }
+  .advertisement .ads-section h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .advertisement {
     padding: 1rem 5rem;
+  }
+  .advertisement .ads-section h1 {
+    font-size: 3.5rem;
+  }
+  .advertisement .ads-section h2 {
+    font-size: 1.5rem;
   }
 }
 
