@@ -181,7 +181,7 @@
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1rem 5rem;
+  padding: 1rem 3rem;
   align-items: center;
 }
 
@@ -248,11 +248,18 @@
   }
   .advertisement .ads-images {
     display: block;
-    padding: 0 1rem;
+    padding: 0 10rem;
   }
   .advertisement .ads-images img {
     display: block;
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .advertisement .ads-images {
+    display: block;
+    padding: 0;
   }
 }
 
