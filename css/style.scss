@@ -171,10 +171,20 @@
     }
 
     @media screen and (max-width: 600px) {
-        .column {
-            width: 100%;
-            display: block;
-            margin-bottom: 20px;
+        .services-product {
+
+            .row {
+                margin: 0 50px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .services-product {
+
+            .row {
+                margin: 0 64.5px;
+            }
         }
     }
 }
