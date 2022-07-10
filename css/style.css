@@ -174,7 +174,7 @@
 }
 @media only screen and (max-width: 321px) {
   .services .services-product .row {
-    margin: 0 10px;
+    margin: 0;
   }
 }
 .promotion .promote-section .video {
