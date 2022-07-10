@@ -177,13 +177,25 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .services {
+
+        .services-product {
+
+            .row {
+                margin: 0 6.5rem;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .services {
 
         .services-product {
 
             .row {
-                margin: 0 6rem;
+                margin: 0 6.5rem;
             }
         }
     }
@@ -196,7 +208,7 @@
         .services-product {
 
             .row {
-                margin: 0 60px;
+                margin: 0 70px;
             }
         }
     }
@@ -208,7 +220,7 @@
         .services-product {
 
             .row {
-                margin: 0 40px;
+                margin: 0 50px;
             }
         }
     }
@@ -220,7 +232,7 @@
         .services-product {
 
             .row {
-                margin: 0 15px;
+                margin: 0 20px;
             }
         }
     }
