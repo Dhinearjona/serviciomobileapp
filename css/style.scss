@@ -177,17 +177,18 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 768px) {
     .services {
 
         .services-product {
 
             .row {
-                margin: 0 11rem;
+                margin: 0 6rem;
             }
         }
     }
 }
+
 
 @media only screen and (max-width: 426px) {
     .services {
@@ -207,7 +208,7 @@
         .services-product {
 
             .row {
-                margin: 0 3rem;
+                margin: 0 40px;
             }
         }
     }
@@ -219,7 +220,7 @@
         .services-product {
 
             .row {
-                margin: 0 1rem;
+                margin: 0 15px;
             }
         }
     }
