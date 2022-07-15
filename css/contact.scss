@@ -49,6 +49,10 @@
     .Navbar__Link-toggle {
         display: none;
     }
+
+    .active {
+        color: var(--red);
+    }
         
     @media only screen and (max-width: 768px) {
         .Navbar__Items,

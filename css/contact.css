@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial';
+  font-family: "Arial";
 }
 
 :root {
@@ -17,45 +17,41 @@
 .main {
   width: 100%;
 }
-
 .main .Navbar {
   background-color: var(--black);
   display: flex;
-  padding: .5rem 150px;
+  padding: 0.5rem 150px;
   font-family: sans-serif;
   color: var(--white);
   align-items: center;
 }
-
 .main img {
   width: 3rem;
   cursor: pointer;
 }
-
 .main .Navbar__Link {
   padding: 0 1rem;
   color: var(--white);
   text-decoration: none;
 }
-
 .main .Navbar__Link:hover {
   color: var(--red);
 }
-
 .main .Navbar__Items {
   display: flex;
   margin-left: 2rem;
 }
-
 .main .Navbar__Link-toggle {
   display: none;
 }
-
+.main .active {
+  color: var(--red);
+}
 @media only screen and (max-width: 768px) {
   .main .Navbar__Items,
-  .main .Navbar {
+.main .Navbar {
     flex-direction: column;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .main .Navbar__Items {
     display: none;
@@ -78,7 +74,7 @@
   }
   .main .Navbar__Link-toggle {
     align-self: flex-end;
-    padding-top: .3rem;
+    padding-top: 0.3rem;
     padding-right: 1rem;
     font-size: 30px;
     display: initial;
@@ -90,46 +86,38 @@
 .contact {
   height: auto;
 }
-
 .contact .contact-details {
   line-height: 1rem;
   padding: 1rem;
   align-items: center;
 }
-
 .contact .contact-details h1 {
   text-align: center;
   font-weight: bolder;
   font-size: 30px;
   color: var(--red);
 }
-
 .contact .contact-details p {
   text-align: center;
 }
-
 .contact .contact-form {
   margin: 0 33rem;
 }
-
 .contact .contact-form form .form-label {
   color: var(--red);
   font-weight: bolder;
 }
-
 .contact .contact-form form .form-control {
   background: transparent;
   border: 1px solid var(--red);
 }
-
 .contact .contact-form form .btn {
   margin: 1rem 0;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   background: var(--red);
   border: 0;
   border-radius: 10px;
 }
-
 .contact .contact-form form .btn:hover {
   background: var(--black);
 }
@@ -139,13 +127,11 @@
     margin: 0 17rem;
   }
 }
-
 @media screen and (max-width: 769px) {
   .contact .contact-form {
     margin: 0 10rem;
   }
 }
-
 @media screen and (max-width: 426px) {
   .contact .contact-details p {
     font-size: 15px;
@@ -154,7 +140,6 @@
     margin: 0 2rem;
   }
 }
-
 @media screen and (max-width: 321px) {
   .contact .contact-details p {
     font-size: 13px;
@@ -163,14 +148,12 @@
     margin: 0 2rem;
   }
 }
-
 .footer {
   background: var(--black);
   height: auto;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
 }
-
 .footer p {
   color: var(--white);
   align-items: center;
